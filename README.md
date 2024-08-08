@@ -1,7 +1,9 @@
 ## Background 
 
 This project was developed to assist project managers in the banking industry to automatically generate test scripts corresponding to inputted user stories used before app production. 
-This application takes user stories as input and generates detailed, HTML-formatted test scripts. These scripts can then be used by QA teams to thoroughly test new features or changes before they are deployed to production environments.
+
+
+- This application takes user stories as input and generates detailed, HTML-formatted test scripts. These scripts can then be used by QA teams to thoroughly test new features or changes before they are deployed to production environments.
 
 ## Features
 
