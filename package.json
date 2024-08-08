@@ -1,0 +1,17 @@
+{
+  "name": "user-story-converter",
+  "version": "1.0.0",
+  "description": "Convert user stories to test scripts",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mammoth": "^1.8.0",
+    "multer": "^1.4.2"
+  }
+}

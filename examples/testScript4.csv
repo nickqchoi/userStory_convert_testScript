@@ -1,0 +1,195 @@
+No,Test Condition,Test Execution,Expected result,Test Result (Pass/Fail),Defect # (if any),Remarks
+Accessing EPF Self Contribution  page,,,,,,
+1,"Access EPF Self Contribution  from Quick Access
+(Must be added to Quick Access Beforehand)
+","1. Home page
+2. Quick Access
+3. EPF Self Contribution 
+
+","Brought to QuickPay reload page 
+
+",,,
+2,"Access EPF Self Contribution  from Menu
+","1. Home page
+2. Menu
+3. EPF Self Contribution 
+
+","Brought to QuickPay reload page
+",,,
+EPF Self Contribution ,,,,,,
+3,EPF Self Contribution  Page,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+
+","EPF Self Contribution  page - 
+•	Pay From
+•	Pay To
+•	Amount
+•	Detail
+•	Review",,,
+4,EPF Self Contribution  Page - Change FROM account,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Click Edit button on FROM display
+5. Select new account 
+","Dropdown list of all available accounts to pay from
+•	Display account balance with account number 
+
+After selecting different account, the account is reflected on the EPF Self Contribution  page  
+
+	Customer select account > Tick box will appear once selection has been made",,,
+5,EPF Self Contribution  Page - Select EPF Number,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Change TO 
+5. Enter  EPF No to transfer to
+","Acceptance Criteria
+1.	Display empty amount with EPF No.
+2.	The column should be only able to enter numeric
+
+1.	Display the following information 
+•	Recipient Name, EPF No and Amount [displayed based on the EPF No and amount that customer provide]
+•	EPF Contribution, Transfer to and EPF Member MyKad No [ To be displayed]
+•	Recipient Reference 
+•	Other Payment Details [Optional]
+•	Next [button]",,,
+6,"Proceed to Details page
+","1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account
+5. Enter  TO information",Brought to Details page ,,,
+Details page,,,,,,
+7,Details page,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account 
+5. Select TO information
+6. Details Page","1.	Front end able to display the following:
+•	Recipient Name [displayed based on the EPF No that customer provide]
+•	Keypad – For amount to be keyed in
+Acceptance Criteria
+1.	Display empty amount with RM0.00
+2.	The column should be only able to enter numeric
+",,,
+8,Details page - Recipient Reference,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account 
+5. Select TO information
+6. Details Page
+7. Enter recipient details","1.	Display the following information 
+•	Recipient Name, EPF No and Amount [displayed based on the EPF No and amount that customer provide]
+•	EPF Contribution, Transfer to and EPF Member MyKad No [ To be displayed]
+•	Recipient Reference 
+•	Other Payment Details [Optional]
+•	Next [button]",,,
+9,Details page - Amount,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account 
+5. Select TO Service Provider
+6. Details Page
+7. Amount","
+1.	Show Telco Name
+2.	Display EPF Self Contribution  options for customer to select [ RM 10,RM5, RM50,RM100]
+
+Acceptance Criteria
+1.	BAU checking will take place as per current call to EPAY
+2.	Error msg to be prompted if there is no valid credentials provide as per current BAU",,,
+10,Proceed to Review page ,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account
+5. Select TO Service Provider 
+6. Details Page
+7. Enter Mobile Number 
+8. Enter Amount 
+9. Press next ",Brought to review page ,,,
+Review page,,,,,,
+11,Access Review Page ,"1. Home page
+2. Menu
+3. EPF Self Contribution 
+4. Select FROM account
+5. Select TO Service Provider 
+6. Details Page
+7. Enter Mobile Number 
+8. Enter Amount 
+9. Press next ","Display: 
+- Recipient Name 
+- EPF No checkbox
+ - Amount checkbox
+- Recipient Reference ad Other Payment Details [Based on customer provide]
+- Add to Favourite (button)
+- Reminder 
+- Confirm [button]",,,
+12,"Review ""Confirm"" Greyed Out",1. Review Page,"Confirm button greyed, not able to be pressed",,,
+13,"Review ""Confirm"" after verifying all checkbox","1. Review Page
+2. Verify EPF Number Checkbox
+3. Verify Amount Checkbox",Confirm button becomes active,,,
+14,Proceed to Approval  page ,"1. Review Page
+2. Verify Telco Number Checkbox
+3. Verify Mobile Number Checkbox
+4. Verify Amount Checkbox
+5. Press confirm",Brought to approval page ,,,
+Approval page,,,,,,
+15,Access Approval Page,"1. Review Page
+2. Verify Telco Number Checkbox
+3. Verify Mobile Number Checkbox
+4. Verify Amount Checkbox
+5. Press confirm","Display: 
+- From Account  [ Account Name, Account Number and Balance] 
+- Payment Type  
+- EPF No. checkbox
+- Amount  checkbox	
+- EPF Account Type
+- Transfer To [Based on customers selection] 
+- EPF Member Name [Based on customer provide]
+- EPF Member MyKad No [Based on customer provide]
+- Date & Time
+- Swipe to Transfer ",,,
+16,Checkmark correct amount and EPF number,"1. Approval page 
+2. Checkmark correct amount
+3. Checkmark correct EPF number
+",Blue checkmark appears next to amount and Transfer Type,,,
+17,Attempt to Swipe to transfer - WITHOUT checkmark amount AND WiTHOUT checkmark EPF number ,"1. Approval page 
+2. Do not Checkmark amount 
+3. Do not Checkmark EPF number
+3. Swipe to pay 
+","Display ""Error - please verify the details""",,,
+18,Attempt to Swipe to transfer - WITH checkmark EPF number  but WITHOUT checkmark amount ,"1. Approval page 
+2. Do not Checkmark amount 
+3. Checkmark EPF number
+3. Swipe to pay 
+","Display ""Error - please verify the details""",,,
+19,Attempt to Swipe to transfer - WITH checkmark amount but WITHOUT checkmark EPF number,"1. Approval page 
+2. Checkmark amount 
+3. Do not Checkmark EPF number
+3. Swipe to pay 
+","Display ""Error - please verify the details""",,,
+20,Swipe to Transfer Successful ,"1. Approval page 
+2. Checkmark amount 
+3. Checkmark EPF number
+3. Swipe to pay 
+",Brought to Status page ,,,
+Status page,,,,,,
+21,Access status / successful page ,"1. Approval page 
+2. Checkmark correct amount
+3. Swipe to pay ","To display the following information:
+•	Recipient Name, EPF No and Amount [displayed based on the EPF No and amount that customer provide]
+•	Your New Balance
+•	Payment Type
+•	Reference ID
+•	Recipient Reference [Based on customer provide]
+•	Other Payment Details [Based on customer provide]
+•	Date & Time
+•	Download Receipt and Share Receipt [button]
+•	Done [button]",,,
+22,Download receipt ,"1.Status page 
+2. Download receipt",Download to files ,,,
+23,Share receipt ,"1. Status page 
+2. Share receipt  ",Share screen popup,,,
+,,,,,,
+,Total Test Case:,23,,,,
+,Total Performed:,0,,,,
+,% Completion,0.00%,,,,

@@ -1,0 +1,238 @@
+No,Test Condition,Test Execution,Expected result,Test Result (Pass/Fail),Defect # (if any),Remarks
+BIYP Duitnow Dashboard,,,,,,
+1,"Access DuitNow Transfer page
+
+","1. Home page
+2. DuitNow Transfer
+
+","Brought to DuitNow Transfer Page - 
+1. Pay From
+2. Pay To
+3. Amount
+4. Detail
+5. Preview
+""Step 1 of 5"" button to continue
+
+",,,
+"""Pay From"" page",,,,,,
+2,"Access DuitNow Transfer ""Pay From"" page
+","1. Home page
+2. Duitnow Transfer
+3. ""Step 1 of 5"" button
+","Pay From page: 
+List of all user accounts: SavingsPlus, eSaving, Current etc.",,,
+3,"Select account from ""Pay From"" page","1. DuitNow ""Pay From"" page
+2. Click on account that is not defaulted account chosen (2nd and below)",Account should show green checkmark next to indicating it has been chosen,,,
+4,"Back button
+
+","""Pay From"" page -> Back button
+
+
+
+
+","Brought to Duitnow Dashboard page
+",,,
+5,"Proceed to ""Pay To"" page","1. DuitNow ""Pay From"" page
+2. Selected account (and passed step 3)
+3. ""Next"" button
+
+","Brought to DuitNow ""Pay To"" page
+",,,
+"""Pay To"" page",,,,,,
+6,"Access DuitNow Transfer ""Pay To"" page
+","1. ""Pay From"" page
+2. Select account
+3. Click next
+","""Pay To"" page - 
+New Transfer, Favourite, Recent List 
+1. New Transfer should have phone icon next to it
+1. Favourite list should show list of favourites 
+2. Recent List should show most recent Duitnow Transaction receivers in most recent order from top",,,
+7,Select Duitnow new transfer from name/mobile no. search,"1. ""Pay To"" page
+2. New Transfer search
+2. Search for payee/mobile no. name
+3. Click Payee name","1. Green checkmark appears next to name
+2. Next button to proceed to ""Transfer Amount"" appears ",,,
+8,Select Duitnow new transfer from favourites,"1. ""Pay To"" page
+2. Select from Favourite list","1. Green checkmark appears next to name
+2. Next button to proceed to ""Transfer Amount"" appears ",,,
+9,Select Duitnow new transfer from recents,"1. ""Pay To"" page
+2. Select from Recent List","1. Green checkmark appears next to name
+2. Next button to proceed to ""Transfer Amount"" appears ",,,
+10,"Back button
+
+","""Pay To"" page -> Back button
+
+
+
+
+","Brought to ""Pay From"" page",,,
+11,"Proceed to ""Transfer Amount""","1. Complete 7 or 8 or 9
+2. Press Next","Brought to DuitNow ""Transfer Amount"" page
+",,,
+"""Transfer Amount"" page",,,,,,
+12,"Access DuitNow Transfer ""Amount"" page
+","1. Complete 7 or 8 or 9
+2. Press Next","1. Shows the correct recipient you are transferring to - name and mobile number 
+2. Grid to enter amount 
+3. Delete number button
+4. Proceed button",,,
+13,10 Digit or X Limit,"1. Duitnow Transfer page
+2. Enter number higher than 10 digits or X",1. Will not allow you to type any more numbers ,,,
+14,Back button,"""Transfer amount"" page -> Back button
+
+","Brought to ""Pay To"" page",,,
+15,Proceed button doesn't work if no amount entered,"1. ""Transfer amount"" page
+2. Enter rm 0 amount
+3. ""Next""",Does not proceed to next page ,,,
+16,"Proceed to ""Details page""","1. ""Transfer amount"" page
+2. Enter valid amount
+3. ""Next""","Brought to DuitNow ""Detail"" page
+",,,
+"""Details"" page",,,,,,
+17,"Access Duitnow ""Details"" page","1. ""Transfer amount"" page
+2. Enter valid amount
+3. ""Next""","Details page - 
+Shows the correct recipient you are transferring to - name and mobile number 
+1. Recipient Reference prompt REQUIRED
+2. Other Payment details prompt OPTIONAL 
+3. Next button greyed out initially
+",,,
+19,Cannot continue if no Recipient Reference Entered,"1. ""Details"" page
+2. No reference entered","""Continue"" button greyed out and not able to be clicked",,,
+20,Continue with recipient reference,"1. ""Details"" page
+2. Reference entered","""Continue"" button turns blue and able to be clicked",,,
+21,Continue with recipient reference and other paymnet details,"1. ""Details"" page
+2. Reference entered and other details entered","""Continue"" button turns blue and able to be clicked",,,
+22,Back button,"""Details"" page -> Back button
+
+","Brought to ""Transfer amount"" page",,,
+23,"Proceed to ""Review""","1. ""Details"" page
+2. Complete 20 or 21","Brought to DuitNow ""Review"" page
+",,,
+"""Review"" page",,,,,,
+24,"Access Duitnow ""Review"" page","1. ""Details"" page
+2. Complete 20 or 21","Review Page - 
+1. Shows the correct recipient you are transferring to - name and mobile number 
+2. Shows correct amount you entered
+3. Shows correct Recipient Reference you entered
+4. Shows correct other payment details (if entered)
+5. Add to favourites switch 
+6. Reminder button
+Continue button",,,
+25,Add to payee to favourites - favourite nickname invalid (same as another favourite),"""Review page"" 
+1. Click on the favourite switch 
+3. Enter Favourite Nickname which is same as a previous favourite","Popup ""You already have a favourite with this name. Please enter a different name""",,,
+26,Add to payee to favourites - favourite nickname valid,"""Review page"" 
+1. Click on the favourite switch 
+3. Enter valid favourite nickname",*[1] ,,,
+27,Back button,"""Review"" page -> Back button
+
+","Brought to ""Details"" page",,,
+28,"Proceed to ""Mobile Secured Approval"" page","1. ""Review page"" 
+2. Press continue","Brought to ""Mobile Secured Approval Page""
+",,,
+"""Review"" page",,,,,,
+29,"Access ""Mobile Secured Approval"" page","1. ""Review page"" 
+2. Press continue","Mobile Secured Approval page: 
+1. Shows correct account chosen from ""Pay From"" page with total balance
+2. Shows the correct recipient name you are transferring to 
+3. Prompts to checkmark correct recipient mobile number
+4. Prompts to checkmark correct amount
+5. Date and Time
+6. Transfer type - DuitNow Transfer 
+7. Swipe to transfer ",,,
+30,Checkmark correct payee Mobile Number,"""MSA"" page 
+Checkmark mobile number",Blue checkmark appears next to mobile number ,,,
+31,Checkmark correct payee amount,"""MSA"" page 
+Checkmark amount",Blue checkmark appears next to amount,,,
+32,Attempt to Swipe to transfer - WITHOUT checkmark payee mobile number and WITHOUT checkmark amount,"""MSA page 
+Do not checkmark mobile number 
+Do not checkmark amount","Display ""Error - please verify the details""",,,
+39,Attempt to Swipe to transfer - with checkmark payee mobile number but WITHOUT checkmark amount,"""MSA"" page 
+Checkmark mobile number 
+Do not checkmark amount","Display ""Error - please verify the details""",,,
+40,Attempt to Swipe to transfer - with checkmark amount but WITHOUT checkmark payee mobile number ,"""MSA"" page 
+Checkmark amount
+Do not checkmark mobile number","Display ""Error - please verify the details""",,,
+41,Back button,"""MSA"" page -> Back button
+
+","Brought to ""Details"" page",,,
+42,Complete Payment by Swipe to transfer ,"""MSA"" page 
+Checkmark mobile number
+Checkmark amount
+Swipe to transfer","Brought to ""transfer successful"" page",,,
+"""Transfer Successful"" page",,,,,,
+43,"Access ""Transfer Successful"" page","""MSA"" page 
+Checkmark mobile number
+Checkmark amount
+Swipe to transfer","Transfer sucessful page: 
+1. Shows the correct recipient name, number and transaction amount 
+2. Shows new balance of account you selected in ""Pay From page"" 
+4. Shows Transfer type Duitnow Transfer
+5. Shows reference ID
+6. Shows correct recipient reference you entered 
+7. Shows correct other payment details if entered  
+8. Shows date and time 
+9. Download receipt button 
+10. Share receipt button ",,,
+44,Download receipt ,"""Transfer sucessful"" page
+Click Download receipt ",Download to files ,,,
+45,Share receipt ,"""Transfer sucessful"" page
+Click Share receipt ",Share screen popup,,,
+46,Done,"""Transfer sucessful""
+Click Done",Brought back to home screen [2],,,
+Post - Transaction Checks,,,,,,
+47,Check for recent list update in Duitnow Transfer (Following payment made from *[2]) (No favourite added),"1. Home page
+2. DuitNow Transfer
+3. Select account 
+4. Look at recent list
+",Most recent transaction should be the transaction you just made. Correct name and mobile number ,,,
+48,Check for recent list update in Duitnow Transfer (Following payment made from *[2]) (Favourite added *[1]),"1. Home page
+2. DuitNow Transfer
+3. Select account 
+4. Look at recent list
+5. Look at favourite list 
+","Most recent transaction should be the transaction you just made. Correct name and mobile number . 
+
+Favourite list should be updated to show favourite that you added ",,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,Total Test Case:,41,,,,
+,Total Performed:,0,,,,
+,% Completion,0.00%,,,,

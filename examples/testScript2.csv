@@ -1,0 +1,214 @@
+No,Test Condition,Test Execution,Expected result,Test Result (Pass/Fail),Defect # (if any),Remarks
+Accessing LEO Page - Register with FantasyBank@Work,,,,,,
+1,"Register with FantasyBank@Work
+
+","1. Log out of account if previously registered 
+2. Brought to Login/Activate page
+3. Click ""Login/Activate"" 
+4. Select ""For FantasyBank@Work user only, Sign up here"" option 
+5. Enter the reference number provided by bank staff 
+6. Confirm to proceed with activation 
+
+",Brought to NRIC verification page ,,,
+NRIC verification page,,,,,,
+2,NRIC verification page ,"1. Log out of account if previously registered 
+2. Brought to Login/Activate page
+3. Click ""Login/Activate"" 
+4. Select ""For FantasyBank@Work user only, Sign up here"" option 
+5. Enter the reference number provided by bank staff 
+6. Confirm to proceed with activation 
+
+","1. Customer is required to capture their NRIC for verification purposes
+Start Camera Button displayed ",,,
+3,Start Using Camera and Capture NRIC,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC","1. Camera opens after clicking ""Start Using""
+2. After capturing NRIC, confirmation popup is displayed ",,,
+4,NRIC Capture confirmation - No,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC
+4. Click ""No"" on confirmation ","1. Camera opens after clicking ""No"" on confirmation to recapture NRIC
+2. After capturing NRIC, confirmation popup is displayed ",,,
+5,NRIC Capture confirmation - Yes,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC
+4. Click ""Yes"" on confirmation ","Brought to Country of Birth Selection - 
+1. Ensure drop down list of countries are displayed 
+",,,
+6,Cannot procceed without country of birth confirmation ,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC
+4. Click ""Yes"" on confirmation
+ ",On Country of Birth Selection - Confirmation Button is greyed out and user is unable to procceed without first selecting a country of birth from the drop down list,,,
+7,Proceed with country of birth confirmation ,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC
+4. Click ""Yes"" on confirmation
+5. Select country of birth from drop down list 
+6. Click Confirm 
+ ","Confirm button is turned active and turns blue after selecting a country from the drop down list 
+- The user then procceeds to the Personal Information and Necessary Declaration page",,,
+Personal Information Page,,,,,,
+8,Personal Information Screen,"1. NRIC verification page 
+2. Click ""Start Using""
+3. Capture NRIC
+4. Click ""Yes"" on confirmation
+5. Select country of birth from drop down list 
+6. Click Confirm 
+ ","1. Customer able to confirm their personal information and check on the declaration 
+
+
+Personal Information is Auto Populated correctly",,,
+9,Personal Information - Declarations ,"1. Personal Information
+2. Scroll to 'Declarations'","Declaration List: 
+1. U.S Citizen Declaration
+2. Terms & Conditions
+3. PIDM Deposit Insurance System (DIS) e-Brochure
+4. PDPA",,,
+10,Personal Information - Declarations not checked ,"1. Personal Information
+2. Scroll to 'Declarations'
+2. Leave Declarations Unchecked",On Personal Information - Confirmation Button is greyed out and user is unable to procceed without first checking all the declarations on the page,,,
+11,Personal Information - Declarations checked and able to procceed,"1. Personal Information
+2. Scroll to 'Declarations'
+3. All Declarations Unchecked
+4. Confirm","Ensure that confirm button only becomes active and user can only procceed once all four declarations have been checked - 
+Declaration page:
+1. U.S Citizen Declaration
+2. Terms & Conditions
+3. PIDM Deposit Insurance System (DIS) e-Brochure
+4. PDPA
+
+After clicking confirm, brought to the Common Reporting Standard page ",,,
+Common Reporting Standard page ,,,,,,
+12,Common Reporting Standard Screen,"1. Personal Information
+2. Scroll to 'Declarations'
+3. All Declarations Unchecked
+4. Confirm","1. Customer requires to perform CRS declaration as part of the activation
+
+Display : 
+
+- Options for Tax Residence: 
+� Malaysia & Non-Malaysia Tax Resident
+� Malaysia Tax Resident
+� Non-Malaysia Tax Resident
+
+- Field to enter Tax Information : 
+� Tax Jurisdiction
+� Tax Identification Number (TIN) � if any
+
+[Add More Tax Jurisdiction Button] (optional)
+
+[Upload/Capture and confirm tax supporting documents Button] (optional)
+
+",,,
+13,Common Reporting Standard - Select  Tax Residence,"1. Common Reporting Standard page
+2. Select Tax Residence  ","Options for Tax Residence: 
+� Malaysia & Non-Malaysia Tax Resident
+� Malaysia Tax Resident
+� Non-Malaysia Tax Resident",,,
+14,Common Reporting Standard - Tax Information ,"1. Common Reporting Standard page
+2. Select Tax Information ","Field to enter Tax Information : 
+� Tax Jurisdiction
+� Tax Identification Number (TIN) � if any",,,
+15,Common Reporting Standard - Add more Tax information ,"1. Common Reporting Standard page
+2. Click ""Add more tax information"" button ","NEW Field to enter Tax Information : 
+� Tax Jurisdiction
+� Tax Identification Number (TIN) � if any",,,
+16,Common Reporting Standard - Upload/Capture tax supporting documents,"1. Common Reporting Standard page
+2. Click ""Upload/Capture tax supporting documents"" button ","1. Camera opens 
+2. Confirmation button after capturing tax supporting documents ",,,
+17,Cannot procceed with Common Reporting Standard undeclared ,"1. Common Reporting Standard page 
+2. Information left empty ",On  Common Reporting Standard - Confirmation Button is greyed out and user is unable to procceed without first providing all CRS information ,,,
+18,Procceed after Common Reporting Standard declared ,"1. Common Reporting Standard page 
+2. Enter all information required ",Brought to signature declaration page ,,,
+"Signature , Username, Password, and Secure Phrase for AOM",,,,,,
+19,"Signature , Username, Password, and Secure Phrase for AOM page ","1. Common Reporting Standard page 
+2. Enter all information required ","Customer requires to sign and enter their new username, password and secure phrase in order to access AOM modules moving forward
+
+",,,
+20,Signature - Cannot procceed without confirm,"1. Signature , Username, Password, and Secure Phrase for AOM page 
+2. No signature input 
+3. Cannot procceed
+
+",Confirm button is greyed out and cannot procceed until signature has been made ,,,
+21,Procceed with signed signature,"1. Signature , Username, Password, and Secure Phrase for AOM page 
+2. Procceed with signature
+
+
+
+",Brought to username and password page,,,
+22,"Set username, password, securephrase","1. Signature , Username, Password, and Secure Phrase for AOM page 
+2. Procceed with signature
+3. Key in username and confirm password 
+4. Key in securephrase and background color
+
+
+","Confirm button is greyed out and cannot procceed until username, password, and securephrase has been set. 
+
+On confirmation procceed to email, everyday account and facial ID page  ",,,
+"Email, everyday account, face ID (iOS)",,,,,,
+23,"Access email, everyday account, face ID page ","1. Signature , Username, Password, and Secure Phrase for AOM page 
+2. Procceed with signature
+3. Key in username and confirm password 
+4. Key in securephrase and background color
+
+
+",1. Customer requires to enter their email address  and choose their Everyday account and to enable facial ID to login into AOM,,,
+24,Enter email and select Everyday account,"1. Email, everyday account, face ID page
+2. Enter email 
+3. Select everyday account 
+
+
+",Procceed to Face ID popup (iOS),,,
+25,"FaceID - ""Not now"" button ","1. Email, everyday account, face ID page
+2. Enter email 
+3. Select everyday account 
+4. Click ""Not Now"" on Face ID Popup
+
+",Brought to mobile number page ,,,
+26,"FaceID - ""Enable"" button ","1. Email, everyday account, face ID page
+2. Enter email 
+3. Select everyday account 
+4. Click ""Enable"" on Face ID Popup
+
+","iOS Face ID feature. 
+
+Then brought to mobile number page ",,,
+Mobile number page ,,,,,,
+27,Mobile number page ,"1. Email, everyday account, face ID page
+2. Enter email 
+3. Select everyday account 
+4. Click ""Enable"" on Face ID Popup
+5. Brought to mobile number page
+","1. Customer requires to verify their mobile number and perform 2-way SMS 
+2. Customer will receive verification code via SMS 
+",,,
+28,"Perform verify mobile number , 2-way SMS and receive verification code","1. Verify mobile number on AOM and tick checkbox to proceed
+2. Perform 2-way SMS and receive verification code
+3. Enter verification code on AOM and click �Submit� 
+
+
+
+",Procceed to Debit Card PIN page,,,
+Debit Card PIN page,,,,,,
+29,Access debit card Pin page,"1. Verify mobile number on AOM and tick checkbox to proceed
+2. Perform 2-way SMS and receive verification code
+3. Enter verification code on AOM and click �Submit� 
+
+
+
+","""Enter your new debit/atm Pin number"" prompt",,,
+30,Enter debit card Pin - fail,"1. Debit Card PIN page
+2. Enter debit card PIN number
+3. Enter wrong debit card PIN number on 2nd popup
+
+","Ensure cannot procceed with registration
+",,,
+31,Enter debit card Pin - success,"1. Debit Card PIN page
+2. Enter debit card PIN number
+3. Re-enter same debit card PIN number
+4. Ensure registration is successful
+
+","Ensure that confirm button only becomes active and user can only procceed once debit Pin is entered . 
+
+On final confirmation after debit PIN is entered 2x , registration is successful",,,

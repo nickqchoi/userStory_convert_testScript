@@ -1,0 +1,220 @@
+No,Test Condition,Test Execution,Expected result,Test Result (Pass/Fail),Defect # (if any),Remarks
+Accessing Jompay page and login,,,,,,
+1,"Access Jompay page from Quick Access
+(If Jompay added to Quick Access)
+
+","1. Home page
+2. Quick Access
+3. Jompay
+
+","Brought to Jompay login page 
+
+",,,
+2,"Access Jompay page from Explore
+(If Jompay added to Quick Access)
+
+","1. Home Page 
+2. Explore (from navigation bar)
+3. Jompay
+","Brought to Jompay login page
+",,,
+3,Login to Jompay  (incorrect credentials),"1. On Jompay login page 
+2. Key in wrong credentials and log in","1. Display ""Incorrect credentials""
+2. Button to retry",,,
+4,Login to Jompay  (correct credentials),"1. On Jompay login page 
+2. Key in credentials and log in",Brought to Jompay page,,,
+Jompay page,,,,,,
+5,Accessing Jompay page,"1. Jompay login page
+2. Key in credentials and log in","Jompay page - 
+
+1. Search field > Biller code / Biller name 
+
+",,,
+6,"Test Jompay search - detect ""Current""","1. Jompay page
+2. Search field > Biller code / Biller name 
+3. Type current",List of current Biller code / Biller name shown,,,
+7,Test Jompay search - displays correct sequence ,"1. Jompay page
+2. Search field ","Search function to be displayed with the following sequence : 
+1. Favourite Biller (if added) 
+2. Last 90 Transaction (able to be searched with Biller Code, Biller name, Ref num) 
+",,,
+8,Test Jompay list- displays correct sequence ,"1. Jompay page
+2. Search field > Biller code / Biller name 
+","List to display by : 
+1. Most recent transactions
+2. Most used billers 
+3. Category breakdown (Follow current BAU)",,,
+9,"Access Jompay biller reference page
+","1. Jompay page
+2. Search field > Biller code / Biller name 
+3. Select biller ",Brought to reference page,,,
+Type reference page,,,,,,
+6,Access reference page,"1. Jompay page
+2. Search field > Biller code / Biller name 
+3. Select biller ","Reference page - 
+1. Correct biller details as selected previously are displayed
+2. Prompts to enter reference number 1 
+3. Prompts to enter reference number 2 ",,,
+7,Reference number auto populated if biller is a favourite,"1. Jompay page
+2. Search field > Biller code / Biller name 
+3. Click on a favourite biller (GIVEN favourite biller added)
+4. Reference page","Reference page - 
+1. Correct biller details as selected previously are displayed
+2. Reference number 1 auto populated
+3. Reference number 2 auto populated",,,
+8,Ensure reference number 1 is mandatory - by CANNOT proceed,"1. Reference page 
+2. Do not key in reference number 1 ","Reference page - 
+1. Cannot proceed to keypad page",,,
+9,Ensure reference number 1 is mandatory - by CAN proceed,"1. Reference page 
+2. Key in reference number 1 
+3. Key in reference number 2 (optional)","Reference page - 
+1. Can proceed to keypad page",,,
+10,Proceed to Amount page,"1. Reference page 
+2. Key in reference number 1 
+3. Key in reference number 2 (optional)
+4. Click proceed","Brought to Jompay Amount page
+",,,
+"""Transfer Amount"" page",,,,,,
+12,Access Jompay Amount page,"1. Reference page 
+2. Key in reference number 1 
+3. Key in reference number 2 (optional)
+4. Click proceed","Amount page - 
+1. Correct biller details as selected previously are displayed 
+2.Correct reference number 1 as previously entered is displayed
+3. Correct reference number 2 if previously entered is displayed
+4. Initial amount RM0.00 displayed 
+5. Keypad to enter amount displayed",,,
+13,Initial amount RM0.00 displayed ,1. Amount page,Initial amount 0.00 displayed ,,,
+14,10 Digit or X Limit,"1. Amount page
+2. Keypad
+2. Enter number higher than 10 digits ",Will not allow you to type any more numbers ,,,
+15,BAU check - unsuccessful,"1. Amount page
+2. Keypad 
+3. No valid credential provided as per current BAU",Error message displayed,,,
+16,BAU check - successful,"1. Amount page
+2. Keypad 
+3. Valid credential provided as per current BAU","No error message displayed, can proceed with enter amount",,,
+17,Ensure BAU check successful and enter amount limit successful before can proceed ,"1. Amount page
+2. Keypad 
+3. Valid credential provided as per current BAU
+4. Appropriate amount entered by user ",Can proceed to Review page ,,,
+18,Proceed to Review page ,"1. Amount page
+2. Keypad 
+3. Valid credential provided as per current BAU
+4. Appropriate amount entered by user
+5. Click proceed ",Brought to review page ,,,
+Review page,,,,,,
+19,Access Review Page,"1. Amount page
+2. Keypad 
+3. Valid credential provided as per current BAU
+4. Appropriate amount entered by user
+5. Click proceed ","Review page - 
+1. Biller name and biller code [amount] correctly displayed as previously entered 
+2. Reference number displayed as previously entered
+3. Add favourite option 
+4. Add reminder option 
+",,,
+19,Add biller to favourite ,"1. Review page 
+2. Add biller to favourite","See post transaction tests below 
+[1]
+",,,
+20,Proceed to approval page ,"1. Review page
+2. Click proceed ",Brought to approval page ,,,
+Approval page,,,,,,
+21,Access approval page,"1. Review page
+2. Click proceed ","Approval page: 
+1. Shows correct account chosen from ""Pay From"" page  (account name, account no., balance)
+2. Shows the correct biller name and code 
+3. Shows correct reference number 1/2
+4. Date and Time
+4. Prompts to checkmark correct amount
+6. Transfer type - Jompay
+7. Swipe to transfer ",,,
+22,Checkmark correct amount,"1. Approval page 
+2. Checkmark correct amount
+",Blue checkmark appears next to amount,,,
+23,Attempt to Swipe to transfer - WITHOUT checkmark amount ,"1. Approval page 
+2. Do not Checkmark correct amount
+3. Swipe to pay 
+","Display ""Error - please verify the details""",,,
+24,Attempt to Swipe to transfer - WITH checkmark amount ,"1. Approval page 
+2. Checkmark correct amount
+3. Swipe to pay 
+","1. Can proceed 
+2. Brought to status page ",,,
+Status page,,,,,,
+25,Access status / successful page ,"1. Approval page 
+2. Checkmark correct amount
+3. Swipe to pay ","Status page: 
+1. Displays status : Successful [2] / Fail 
+2. Shows the correct biller name, code and transaction amount 
+3. Shows correct reference number 1/2
+4. Shows Transfer type Jompay Transfer
+5. Show details button 
+5. Share receipt button
+6. Download receipt button
+",,,
+26,Download receipt ,"1.Status page 
+2. Download receipt",Download to files ,,,
+27,Share receipt ,"1. Status page 
+2. Share receipt  ",Share screen popup,,,
+Post - Transaction Checks,,,,,,
+28,Check for recent list update in Jompay (Following payment made from *[2]) (No favourite added),"1. Home page
+2. Jompay Transfer
+4. Look at recent list
+",Most recent transaction should be the transaction you just made. Correct biller name and no,,,
+29,Check for recent list update in Duitnow Transfer (Following payment made from *[2]) (Favourite added *[1]),"1. Complete a previous jompay transaction and add biller to favourites 
+2. Complete payment 
+3. Go back to home 
+4. Jompay 
+5. Look at biller recent list 
+6. Look at biller favourite list 
+","Most recent transaction should be the transaction you just made. Correct name and mobile number . 
+
+Favourite list should be updated to show favourite that you added ",,,
+30,Check for auto populate reference number for the favourite biller you just added ,"1. Complete a previous jompay transaction and add biller to favourites 
+2. Complete payment 
+3. Go back to home 
+4. Jompay
+5. Select favourite biller you just paid 
+6. Look at Reference page 
+",Reference number 1 and 2 should be auto populated ,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,Total Test Case:,34,,,,
+,Total Performed:,0,,,,
+,% Completion,0.00%,,,,
