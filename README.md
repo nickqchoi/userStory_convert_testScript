@@ -57,8 +57,5 @@ npm start
 
 - You can now use this test script for your QA processes or export it for further use.
 
-## License
-This project uses the MIT License.
-
 ## Contact
 email nicchoi500@gmail.com
