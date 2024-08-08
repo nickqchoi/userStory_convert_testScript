@@ -20,23 +20,33 @@ This application takes user stories as input and generates detailed, HTML-format
 To install the User Story to Test Script Converter, follow these steps:
 
 - Clone the repository:
-```git clone https://github.com/yourusername/user-story-to-test-script-converter.git```
+```
+git clone https://github.com/yourusername/user-story-to-test-script-converter.git
+```
 
 - Navigate to the project directory:
-```cd user-story-to-test-script-converter```
+```
+cd user-story-to-test-script-converter
+```
 
 - Install the dependencies:
-```npm install```
+```
+npm install
+```
 
 - Create a .env file in the root directory and add your Claude API key:
-```CLAUDE_API_KEY=your_api_key_here```
+```
+CLAUDE_API_KEY=your_api_key_here
+```
 
 
 ## Usage
 To run the User Story to Test Script Converter, follow these steps:
 
 Start the server:
-```npm start```
+```
+npm start
+```
 
 - Open your web browser and navigate to http://localhost:3000 
 
