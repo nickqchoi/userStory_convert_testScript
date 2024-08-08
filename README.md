@@ -1,6 +1,6 @@
 ## Background 
 
-This project was developed to assist project managers in the banking industry to automatically generate test scripts corresponding to inputted user stories used before app production. 
+This project was developed to assist project managers in the banking industry to automatically generate test scripts using inputted user stories. 
 
 ## Features
 
