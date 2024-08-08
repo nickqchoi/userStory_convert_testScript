@@ -23,7 +23,7 @@ To install the User Story to Test Script Converter, follow these steps:
 git clone https://github.com/nickqchoi/userStory_convert_testScript
 ```
 
-- Navigate to the project directory:
+- Navigate to the project directory in your IDE of choice:
 ```
 cd userStory_convert_testScript
 ```
