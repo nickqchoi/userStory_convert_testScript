@@ -20,12 +20,12 @@ To install the User Story to Test Script Converter, follow these steps:
 
 - Clone the repository:
 ```
-git clone https://github.com/yourusername/user-story-to-test-script-converter.git
+git clone https://github.com/nickqchoi/userStory_convert_testScript
 ```
 
 - Navigate to the project directory:
 ```
-cd user-story-to-test-script-converter
+cd userStory_convert_testScript
 ```
 
 - Install the dependencies:
