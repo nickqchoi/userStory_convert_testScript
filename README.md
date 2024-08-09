@@ -4,8 +4,7 @@ This project was developed to assist project managers in the banking industry to
 
 ## Features
 
-- Upload user stories in DOCX format
-- Process user stories using the Claude 3.5 Sonnet API
+- Upload user stories in .DOCX (Word) format
 - Generate HTML-formatted test scripts
 - View generated test scripts directly in the browser
 - Example user stories and test scripts included for reference
@@ -16,7 +15,7 @@ This project was developed to assist project managers in the banking industry to
 - A Claude API key from Anthropic
 
 ## Installation
-To install the User Story to Test Script Converter, follow these steps:
+To install:
 
 - Clone the repository:
 ```
@@ -40,7 +39,7 @@ CLAUDE_API_KEY=your_api_key_here
 
 
 ## Usage
-To run the User Story to Test Script Converter, follow these steps:
+To run:
 
 Start the server:
 ```
@@ -51,7 +50,7 @@ npm start
 
 - Use the web interface to upload a user story file (DOCX format).
 
-- Wait for the processing to complete. The application will use the Claude API to generate a test script based on your user story.
+- The application will use the Claude API to generate a test script based on your user story.
 
 - Once processing is complete, you will be automatically redirected to a page displaying the generated test script in an HTML table format.
 
